@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+   <test name="MyTest" >
+   		<groups>
+   			<run>
+   				<include name = "demo"></include>
+   				<!--  <exclude name = "demo"></exclude>-->
+   				
+   			</run>
+   		</groups>
+       <classes> 
+          <class name="com.test.group_test" />
+       </classes>
+   </test>
+ </suite>
