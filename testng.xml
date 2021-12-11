@@ -3,8 +3,6 @@
    <test name="MyTests" >
        <classes> 
           <class name="com.test.RegistrationTest" />
-          <class name="com.test.RegistrationTest" />
-          <class name="com.test.RegistrationTest" />
        </classes>
    </test>
  </suite>

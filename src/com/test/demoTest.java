@@ -18,6 +18,7 @@ public class demoTest {
 
 	@BeforeMethod
 	public void beforeClass() {
+		System.out.println("data");
 		System.out.println("This will execute before the Class");
 		System.setProperty("webdriver.chrome.driver", "C:\\Training-PPT\\Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -32,6 +33,7 @@ public class demoTest {
 	
 	@Test
 	public void testCase1() {
+		System.out.println("demo");
 		driver.get("http://demo.guru99.com/test/newtours/index.php");
 		driver.findElement(By.xpath("//a[contains(.,'REGISTER')]")).click();
 		driver.findElement(By.xpath("//input[contains(@name,'email')]")).sendKeys("Sumit");

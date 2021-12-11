@@ -10,9 +10,12 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class anotationsExample {
+import com.base.BaseClass;
+
+public class anotationsExample extends BaseClass {
 	@Test
 	public void testCase1() {
+		System.out.println("anotations");
 		System.out.println("This is the A Normal Test Case");
 	}
 

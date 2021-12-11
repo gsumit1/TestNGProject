@@ -8,7 +8,7 @@ public class group_test {
 	    	System.out.println("This is the starting point of the test");
 	 }
 	 
-	 @Test(groups = { "demo" })	
+	 @Test(groups = { "demo","Reg" })	
 	    public void checkTitle() {	
 		 System.out.println("Free QA Automation Tools For Everyone");
 	 }
