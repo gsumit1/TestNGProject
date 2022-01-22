@@ -5,6 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	
@@ -12,8 +15,11 @@ public class DriverFactory {
 
 	public static WebDriver startApp(WebDriver driver,String url) throws IOException {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/riyaanghosh/git/TestNGProject/chromedriver");
-		driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--ignore-ssl-errors=yes");
+		options.addArguments("--ignore-certificate-errors");
+		driver = new ChromeDriver(options);
 		driver.get(url);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();

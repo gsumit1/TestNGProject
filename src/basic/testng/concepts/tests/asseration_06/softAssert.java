@@ -1,4 +1,4 @@
-package SoftAssertion;
+package basic.testng.concepts.tests.asseration_06;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;

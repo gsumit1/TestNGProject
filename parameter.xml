@@ -4,7 +4,7 @@
 	<parameter name="name1" value="Sumit"/>
    <test name="MyTests" >
        <classes> 
-          <class name="Parameter.ParameterTest" />
+          <class name="basic.testng.concepts.parameter_04.ParameterTest" />
        </classes>
    </test>
  </suite>

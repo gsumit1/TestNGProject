@@ -1,4 +1,4 @@
-package com.test;
+package basic.testng.concepts.tests.priority_02;
 
 import org.testng.annotations.Test;
 

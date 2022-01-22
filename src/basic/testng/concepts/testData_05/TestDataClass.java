@@ -1,4 +1,4 @@
-package TestDataPackage;
+package basic.testng.concepts.testData_05;
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;

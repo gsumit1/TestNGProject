@@ -1,4 +1,4 @@
-package com.test;
+package basic.testng.concepts.tests.group_03;
 
 import org.testng.annotations.Test;
 

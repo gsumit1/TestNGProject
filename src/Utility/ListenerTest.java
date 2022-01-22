@@ -1,15 +1,8 @@
 package Utility;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import com.base.BaseClass;
 
 public class ListenerTest implements ITestListener {
 	@Override

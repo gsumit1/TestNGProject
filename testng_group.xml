@@ -9,7 +9,7 @@
    			</run>
    		</groups>
        <classes> 
-          <class name="com.test.group_test" />
+          <class name="basic.testng.concepts.tests.group_03.group_test" />
        </classes>
    </test>
  </suite>

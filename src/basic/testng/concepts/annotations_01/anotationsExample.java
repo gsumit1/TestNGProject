@@ -1,4 +1,4 @@
-package com.test;
+package basic.testng.concepts.annotations_01;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
