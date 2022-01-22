@@ -8,11 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">55</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Listeners_program</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,410</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.anotationsExample</td><td><a href="#m0">testCase1</a></td><td rowspan="1">1642707477553</td><td rowspan="1">7</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Listeners_program &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.test.RegistrationTestWithData</td><td><a href="#m0">setUp</a></td><td rowspan="1">1642834525025</td><td rowspan="1">2610</td></tr><tr><th colspan="4">Listeners_program &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.RegistrationTest</td><td><a href="#m1">registration_of_user</a></td><td rowspan="1">1642834517023</td><td rowspan="1">7116</td></tr><tr><th colspan="4">Listeners_program &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.test.RegistrationTestWithData</td><td><a href="#m2">FailedTestCases</a></td><td rowspan="1">1642834527676</td><td rowspan="1">-1642834527676</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="1">1642834527679</td><td rowspan="1">-1642834527679</td></tr><tr><th colspan="4">Listeners_program &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.test.RegistrationTestWithData</td><td><a href="#m4">registration_of_user</a></td><td rowspan="1">1642834527671</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.test.anotationsExample#testCase1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Listeners_program</h2><h3 id="m0">com.test.RegistrationTestWithData#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at Utility.DriverFactory.startApp(DriverFactory.java:23)
+	at com.base.BaseClass.setUp(BaseClass.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.RegistrationTest#registration_of_user</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.test.RegistrationTest.registration_of_user(RegistrationTest.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.RegistrationTestWithData#FailedTestCases</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.RegistrationTestWithData#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.RegistrationTestWithData#registration_of_user</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{UserName=sumit, Confirm Password=ibm, Password=ibm}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at Utility.DriverFactory.startApp(DriverFactory.java:23)
+	at com.base.BaseClass.setUp(BaseClass.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
