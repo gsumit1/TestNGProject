@@ -1,191 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="1" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20410" started-at="2022-01-22T12:25:07 IST" finished-at="2022-01-22T12:25:27 IST">
+  <suite name="Test-Suite" duration-ms="63" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
     <groups>
+      <group name="Smoke">
+        <method signature="group_test.checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" class="basic.testng.concepts.tests.group_03.group_test"/>
+      </group> <!-- Smoke -->
+      <group name="demo">
+        <method signature="group_test.checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" class="basic.testng.concepts.tests.group_03.group_test"/>
+        <method signature="group_test.click_element()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="click_element" class="basic.testng.concepts.tests.group_03.group_test"/>
+      </group> <!-- demo -->
     </groups>
-    <test name="Listeners_program" duration-ms="20410" started-at="2022-01-22T12:25:07 IST" finished-at="2022-01-22T12:25:27 IST">
-      <class name="com.test.RegistrationTest">
-        <test-method status="PASS" signature="setUpEnv()[pri:0, instance:com.test.RegistrationTest@66d1af89]" name="setUpEnv" is-config="true" duration-ms="7" started-at="2022-01-22T12:25:07 IST" finished-at="2022-01-22T12:25:07 IST">
+    <test name="MyTest" duration-ms="63" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
+      <class name="basic.testng.concepts.tests.group_03.group_test">
+        <test-method status="PASS" signature="checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" duration-ms="9" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEnv -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.RegistrationTest@66d1af89]" name="setUp" is-config="true" duration-ms="9720" started-at="2022-01-22T12:25:07 IST" finished-at="2022-01-22T12:25:17 IST">
+        </test-method> <!-- checkTitle -->
+        <test-method status="PASS" signature="click_element()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="click_element" duration-ms="3" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="registration_of_user()[pri:0, instance:com.test.RegistrationTest@66d1af89]" name="registration_of_user" duration-ms="7116" started-at="2022-01-22T12:25:17 IST" finished-at="2022-01-22T12:25:24 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.test.RegistrationTest.registration_of_user(RegistrationTest.java:27)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_of_user -->
-        <test-method status="PASS" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.RegistrationTest@66d1af89]" name="FailedTestCases" is-config="true" duration-ms="774" started-at="2022-01-22T12:25:24 IST" finished-at="2022-01-22T12:25:24 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=registration_of_user status=FAILURE method=RegistrationTest.registration_of_user()[pri:0, instance:com.test.RegistrationTest@66d1af89] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.RegistrationTest@66d1af89]" name="tearDown" is-config="true" duration-ms="96" started-at="2022-01-22T12:25:24 IST" finished-at="2022-01-22T12:25:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.RegistrationTest -->
-      <class name="com.test.RegistrationTestWithData">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.test.RegistrationTestWithData@42eca56e]" name="setUp" is-config="true" duration-ms="2610" started-at="2022-01-22T12:25:25 IST" finished-at="2022-01-22T12:25:27 IST">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
-at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at Utility.DriverFactory.startApp(DriverFactory.java:23)
-at com.base.BaseClass.setUp(BaseClass.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="registration_of_user(java.util.HashMap)[pri:0, instance:com.test.RegistrationTestWithData@42eca56e]" name="registration_of_user" duration-ms="0" started-at="2022-01-22T12:25:27 IST" data-provider="getTestData" finished-at="2022-01-22T12:25:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{UserName=sumit, Confirm Password=ibm, Password=ibm}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
-at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at Utility.DriverFactory.startApp(DriverFactory.java:23)
-at com.base.BaseClass.setUp(BaseClass.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_of_user -->
-        <test-method status="SKIP" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.RegistrationTestWithData@42eca56e]" name="FailedTestCases" is-config="true" duration-ms="-1642834527676" started-at="2022-01-22T12:25:27 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedTestCases -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.test.RegistrationTestWithData@42eca56e]" name="tearDown" is-config="true" duration-ms="-1642834527679" started-at="2022-01-22T12:25:27 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.RegistrationTestWithData -->
-    </test> <!-- Listeners_program -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- click_element -->
+      </class> <!-- basic.testng.concepts.tests.group_03.group_test -->
+    </test> <!-- MyTest -->
+  </suite> <!-- Test-Suite -->
 </testng-results>

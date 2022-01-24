@@ -1,4 +1,4 @@
-package basic.testng.concepts.annotations_01;
+package basic.testng.concepts.annotations_001;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,14 +19,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class demoTest {
 	WebDriver driver;
 
-	@BeforeMethod
+	@BeforeClass
 	public void beforeClass() {
 		System.out.println("This will execute before the Class");
 		WebDriverManager.chromedriver().setup();
+		
+		
+		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--ignore-ssl-errors=yes");
 		options.addArguments("--ignore-certificate-errors");
+		
+		
+		
 		driver = new ChromeDriver(options);
+		
+		
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -53,7 +61,7 @@ public class demoTest {
 		System.out.println("This is the A Normal Test Case3");
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void afterClass() {
 		driver.close();
 		driver.quit();

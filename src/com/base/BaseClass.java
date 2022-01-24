@@ -21,6 +21,7 @@ import Utility.DriverFactory;
 public class BaseClass {
 	public WebDriver driver;
 	public String url;
+	public String userName;
 	
 	
 	@BeforeSuite
@@ -29,6 +30,7 @@ public class BaseClass {
 		Properties p=new Properties();
 		p.load(reader);
 		url=p.getProperty("test.url");
+		userName=p.getProperty("UserName");
 
 	}
 

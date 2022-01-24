@@ -1,0 +1,49 @@
+<suite name="Suite1" verbose="1" >
+  <test name="Nopackage" >
+    <classes>
+       <class name="basic.testng.concepts.annotations_01.BeforeTest1" />
+    </classes>
+  </test>
+ 
+  <test name="Regression1">
+    <classes>
+       <class name="basic.testng.concepts.annotations_01.BeforeTest2" />
+       <class name="basic.testng.concepts.annotations_01.BeforeTest3" />
+    </classes>
+  </test>
+</suite>
+
+
+<!--
+<suite name="Suite1" verbose="1" >
+  <test name="Nopackage" >
+    <packages>
+			<package name="com.test1"></package>
+	</packages>
+  </test>
+ 
+  <test name="Regression1">
+  		<packages>
+			<package name="com.test2"></package>
+		</packages>
+  </test>
+</suite>
+
+
+<suite name="Suite1" verbose="1" >
+  <test name="Smoke">
+     		<groups>
+   			<run>
+   				 <include name = "demo"></include> 
+   				 <exclude name = "smoke"></exclude> 
+   			</run>
+   		</groups>
+       <classes> 
+  		<packages>
+			<package name="com.test2"></package>
+			<package name="com.test1"></package>
+		</packages>
+  </test>
+</suite>
+
+-->

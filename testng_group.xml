@@ -3,8 +3,8 @@
    <test name="MyTest" >
    		<groups>
    			<run>
-   				<include name = "demo"></include>
-   				<!--  <exclude name = "demo"></exclude>-->
+   				 <include name = "demo"></include> 
+   				<!--  <exclude name = "demo"></exclude> -->
    				
    			</run>
    		</groups>

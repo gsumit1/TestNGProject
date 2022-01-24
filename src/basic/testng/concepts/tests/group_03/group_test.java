@@ -3,12 +3,12 @@ package basic.testng.concepts.tests.group_03;
 import org.testng.annotations.Test;
 
 public class group_test {
-	 @Test
+	 @Test(groups = { "Smoke" })	
 	    public void starting_point(){
 	    	System.out.println("This is the starting point of the test");
 	 }
 	 
-	 @Test(groups = { "demo" })	
+	 @Test(groups = { "demo","Smoke" })	
 	    public void checkTitle() {	
 		 System.out.println("Free QA Automation Tools For Everyone");
 	 }

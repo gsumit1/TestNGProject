@@ -1,6 +1,8 @@
 package com.pages;
 
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,7 @@ public class HomePage {
 		this.driver = driver;
 		//PageFactory.initElements(driver, this);
 	}
+	
 
 	@FindBy(xpath = "//a[contains(.,'Home')]")
 	public WebElement home;
@@ -25,6 +28,7 @@ public class HomePage {
 
 	public void clickOnRegistration() {
 		rEGISTER.click();
+		
 	}
 
 }
