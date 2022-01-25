@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test_Suite">
-                    <span>testng_group.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Test_Suite">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="basic.testng.concepts.tests.group_03.group_test" hash-for-method="checkTitle">checkTitle</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.test.RegistrationTest" hash-for-method="registration_of_user">registration_of_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="basic.testng.concepts.tests.group_03.group_test" hash-for-method="click_element">click_element</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.test.ReservationTest" hash-for-method="reservation_of_user">reservation_of_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
@@ -127,21 +127,29 @@
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">basic.testng.concepts.tests.group_03.group_test</span>
+              <span class="class-name">com.test.RegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkTitle">
-                  </a> <!-- checkTitle -->
-                  <span class="method-name">checkTitle</span>
+                  <a name="registration_of_user">
+                  </a> <!-- registration_of_user -->
+                  <span class="method-name">registration_of_user</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.ReservationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="click_element">
-                  </a> <!-- click_element -->
-                  <span class="method-name">click_element</span>
+                  <a name="reservation_of_user">
+                  </a> <!-- reservation_of_user -->
+                  <span class="method-name">reservation_of_user</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,23 +157,22 @@
         </div> <!-- panel Test_Suite -->
         <div panel-name="test-xml-Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/riyaanghosh/temp/TestNGProject/testng_group.xml</span>
+            <span class="header-content">/Users/riyaanghosh/temp/TestNGProject/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test-Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;MyTest&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;demo&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utility.ListenerTest&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyTests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;basic.testng.concepts.tests.group_03.group_test&quot;/&gt;
+      &lt;class name=&quot;com.test.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;com.test.ReservationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- MyTest --&gt;
+  &lt;/test&gt; &lt;!-- MyTests --&gt;
 &lt;/suite&gt; &lt;!-- Test-Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,7 +184,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">MyTest (1 class)</span>
+                <span class="test-name">MyTests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,26 +194,6 @@
             <span class="header-content">Groups for Test-Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">checkTitle</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">demo</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">checkTitle</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">click_element</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Test_Suite" class="panel">
@@ -225,18 +212,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkTitle')
-data.setCell(0, 2, 'basic.testng.concepts.tests.group_03.group_test')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'reservation_of_user')
+data.setCell(0, 2, 'com.test.ReservationTest')
+data.setCell(0, 3, 7696);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'click_element')
-data.setCell(1, 2, 'basic.testng.concepts.tests.group_03.group_test')
-data.setCell(1, 3, 3);
+data.setCell(1, 1, 'registration_of_user')
+data.setCell(1, 2, 'com.test.RegistrationTest')
+data.setCell(1, 3, 6961);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -255,9 +242,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">basic.testng.concepts.tests.group_03.group_test</span>
+              <span class="ignored-class-name">com.test.ReservationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">starting_point</span>
+                <span class="ignored-method-name">setUpEnv</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -269,15 +256,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">basic.testng.concepts.tests.group_03.group_test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">checkTitle</span>
+              <div class="chronological-class-name">com.test.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpEnv</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">click_element</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-name">registration_of_user</span>
+                <span class="method-start">9703 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedTestCases([TestResult name=registration_of_user status=SUCCESS method=RegistrationTest.registration_of_user()[...)</span>
+                <span class="method-start">16669 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16673 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.ReservationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16778 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">reservation_of_user</span>
+                <span class="method-start">24178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedTestCases([TestResult name=reservation_of_user status=SUCCESS method=ReservationTest.reservation_of_user()[pri...)</span>
+                <span class="method-start">31876 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31879 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

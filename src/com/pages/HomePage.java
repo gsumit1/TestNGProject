@@ -26,8 +26,18 @@ public class HomePage {
 	@FindBy(xpath = "//a")
 	public List<WebElement> all;
 
+	@FindBy(xpath = "//a[contains(.,'Flights')]")
+	public WebElement Flight_lnk;
+	
+	
 	public void clickOnRegistration() {
 		rEGISTER.click();
+		
+	}
+
+	
+	public void clickOnFlightReservation() {
+		Flight_lnk.click();
 		
 	}
 

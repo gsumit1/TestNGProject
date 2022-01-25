@@ -20,8 +20,8 @@ import Utility.DriverFactory;
 
 public class BaseClass {
 	public WebDriver driver;
-	public String url;
-	public String userName;
+	public static String url;
+	public  static String browser;
 	
 	
 	@BeforeSuite
@@ -30,13 +30,14 @@ public class BaseClass {
 		Properties p=new Properties();
 		p.load(reader);
 		url=p.getProperty("test.url");
-		userName=p.getProperty("UserName");
+		browser=p.getProperty("browser");
 
 	}
 
 	@BeforeClass
 	public void setUp() throws IOException {
-		driver = DriverFactory.startApp(driver,url);
+		System.out.println(url+browser);
+		driver = DriverFactory.startApp(driver,url,browser);
 	}
 
 	@AfterClass
@@ -47,8 +48,7 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void FailedTestCases(ITestResult result) throws IOException {
-
-		if (!result.isSuccess()) {
+		if (!result.isSuccess()) {		
 		String name=result.getMethod().getMethodName()+" "+new SimpleDateFormat("MM-dd-yyyy-HH-ss").format(new GregorianCalendar().getTime());
 			TakesScreenshot scrShot = ((TakesScreenshot) driver);
 			File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);

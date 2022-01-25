@@ -1,9 +1,12 @@
-package com.pages;
+package com.pages.RegistrationPages;
 
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+
+import com.pages.HomePage;
+
 import org.openqa.selenium.WebElement;
 
 public class RegistrationPage extends HomePage{
@@ -26,6 +29,8 @@ public class RegistrationPage extends HomePage{
 	
 	
 	public void register_user(Map<String,String> userDetails) {
+		
+
 		userName.sendKeys(userDetails.get("UserName"));
 		password.sendKeys(userDetails.get("Password"));
 		confirmPassword.sendKeys(userDetails.get("Confirm Password"));

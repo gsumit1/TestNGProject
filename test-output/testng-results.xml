@@ -2,27 +2,64 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-Suite" duration-ms="63" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
+  <suite name="Test-Suite" duration-ms="31947" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:29:02 IST">
     <groups>
-      <group name="Smoke">
-        <method signature="group_test.checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" class="basic.testng.concepts.tests.group_03.group_test"/>
-      </group> <!-- Smoke -->
-      <group name="demo">
-        <method signature="group_test.checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" class="basic.testng.concepts.tests.group_03.group_test"/>
-        <method signature="group_test.click_element()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="click_element" class="basic.testng.concepts.tests.group_03.group_test"/>
-      </group> <!-- demo -->
     </groups>
-    <test name="MyTest" duration-ms="63" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
-      <class name="basic.testng.concepts.tests.group_03.group_test">
-        <test-method status="PASS" signature="checkTitle()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="checkTitle" duration-ms="9" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
+    <test name="MyTests" duration-ms="31947" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:29:02 IST">
+      <class name="com.test.ReservationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.ReservationTest@1060b431]" name="setUp" is-config="true" duration-ms="7391" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method status="PASS" signature="click_element()[pri:0, instance:basic.testng.concepts.tests.group_03.group_test@3234e239]" name="click_element" duration-ms="3" started-at="2022-01-24T10:28:04 IST" finished-at="2022-01-24T10:28:04 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="reservation_of_user()[pri:0, instance:com.test.ReservationTest@1060b431]" name="reservation_of_user" duration-ms="7696" started-at="2022-01-25T10:28:55 IST" finished-at="2022-01-25T10:29:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_element -->
-      </class> <!-- basic.testng.concepts.tests.group_03.group_test -->
-    </test> <!-- MyTest -->
+        </test-method> <!-- reservation_of_user -->
+        <test-method status="PASS" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.ReservationTest@1060b431]" name="FailedTestCases" is-config="true" duration-ms="2" started-at="2022-01-25T10:29:02 IST" finished-at="2022-01-25T10:29:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=reservation_of_user status=SUCCESS method=ReservationTest.reservation_of_user()[pri:0, instance:com.test.ReservationTest@1060b431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedTestCases -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.ReservationTest@1060b431]" name="tearDown" is-config="true" duration-ms="83" started-at="2022-01-25T10:29:02 IST" finished-at="2022-01-25T10:29:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.ReservationTest -->
+      <class name="com.test.RegistrationTest">
+        <test-method status="PASS" signature="setUpEnv()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="setUpEnv" is-config="true" duration-ms="14" started-at="2022-01-25T10:28:30 IST" finished-at="2022-01-25T10:28:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnv -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="setUp" is-config="true" duration-ms="9649" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:28:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="registration_of_user()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="registration_of_user" duration-ms="6961" started-at="2022-01-25T10:28:40 IST" finished-at="2022-01-25T10:28:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_of_user -->
+        <test-method status="PASS" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="FailedTestCases" is-config="true" duration-ms="2" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registration_of_user status=SUCCESS method=RegistrationTest.registration_of_user()[pri:0, instance:com.test.RegistrationTest@4d3167f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedTestCases -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="tearDown" is-config="true" duration-ms="99" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.RegistrationTest -->
+    </test> <!-- MyTests -->
   </suite> <!-- Test-Suite -->
 </testng-results>

@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 
 import com.base.BaseClass;
 import com.pages.HomePage;
-import com.pages.RegistrationPage;
-import com.pages.RegistrationSuccess;
+import com.pages.RegistrationPages.RegistrationPage;
+import com.pages.RegistrationPages.RegistrationSuccess;
 
 public class RegistrationTestWithData extends BaseClass {
 	// This method will provide data to any test method that declares that its Data
