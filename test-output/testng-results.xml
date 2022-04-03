@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-Suite" duration-ms="31947" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:29:02 IST">
+  <suite name="Default suite" duration-ms="81" started-at="2022-04-03T14:00:34 IST" finished-at="2022-04-03T14:00:34 IST">
     <groups>
     </groups>
-    <test name="MyTests" duration-ms="31947" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:29:02 IST">
-      <class name="com.test.ReservationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.ReservationTest@1060b431]" name="setUp" is-config="true" duration-ms="7391" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:55 IST">
+    <test name="Default test" duration-ms="81" started-at="2022-04-03T14:00:34 IST" finished-at="2022-04-03T14:00:34 IST">
+      <class name="basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1">
+        <test-method status="FAIL" signature="method1()[pri:0, instance:basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1@2353b3e6]" name="method1" duration-ms="10" started-at="2022-04-03T14:00:34 IST" finished-at="2022-04-03T14:00:34 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1.method1(AlwaysRunDemo1.java:12)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="reservation_of_user()[pri:0, instance:com.test.ReservationTest@1060b431]" name="reservation_of_user" duration-ms="7696" started-at="2022-01-25T10:28:55 IST" finished-at="2022-01-25T10:29:02 IST">
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1@2353b3e6]" name="method2" duration-ms="3" started-at="2022-04-03T14:00:34 IST" depends-on-methods="basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1.method1" finished-at="2022-04-03T14:00:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reservation_of_user -->
-        <test-method status="PASS" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.ReservationTest@1060b431]" name="FailedTestCases" is-config="true" duration-ms="2" started-at="2022-01-25T10:29:02 IST" finished-at="2022-01-25T10:29:02 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=reservation_of_user status=SUCCESS method=ReservationTest.reservation_of_user()[pri:0, instance:com.test.ReservationTest@1060b431] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="method3()[pri:0, instance:basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1@2353b3e6]" name="method3" duration-ms="1" started-at="2022-04-03T14:00:34 IST" depends-on-methods="basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1.method2" finished-at="2022-04-03T14:00:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FailedTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.ReservationTest@1060b431]" name="tearDown" is-config="true" duration-ms="83" started-at="2022-01-25T10:29:02 IST" finished-at="2022-01-25T10:29:02 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.ReservationTest -->
-      <class name="com.test.RegistrationTest">
-        <test-method status="PASS" signature="setUpEnv()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="setUpEnv" is-config="true" duration-ms="14" started-at="2022-01-25T10:28:30 IST" finished-at="2022-01-25T10:28:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpEnv -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="setUp" is-config="true" duration-ms="9649" started-at="2022-01-25T10:28:31 IST" finished-at="2022-01-25T10:28:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="registration_of_user()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="registration_of_user" duration-ms="6961" started-at="2022-01-25T10:28:40 IST" finished-at="2022-01-25T10:28:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_of_user -->
-        <test-method status="PASS" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="FailedTestCases" is-config="true" duration-ms="2" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=registration_of_user status=SUCCESS method=RegistrationTest.registration_of_user()[pri:0, instance:com.test.RegistrationTest@4d3167f4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FailedTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.RegistrationTest@4d3167f4]" name="tearDown" is-config="true" duration-ms="99" started-at="2022-01-25T10:28:47 IST" finished-at="2022-01-25T10:28:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.RegistrationTest -->
-    </test> <!-- MyTests -->
-  </suite> <!-- Test-Suite -->
+        </test-method> <!-- method3 -->
+      </class> <!-- basic.testng.concepts.alwaysOn_05.AlwaysRunDemo1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

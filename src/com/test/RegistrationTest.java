@@ -3,7 +3,6 @@ package com.test;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;

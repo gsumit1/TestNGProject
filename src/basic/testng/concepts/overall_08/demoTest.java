@@ -1,4 +1,4 @@
-package basic.testng.concepts.annotations_001;
+package basic.testng.concepts.overall_08;
 
 import java.util.HashMap;
 import java.util.Map;

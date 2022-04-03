@@ -1,4 +1,4 @@
-package basic.testng.concepts.tests.asseration_06;
+package basic.testng.concepts.tests.asseration_07;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 import com.base.BaseClass;
 import com.pages.HomePage;
 
-public class softAssert extends BaseClass{
+public class SoftAssertExample extends BaseClass{
 	
 	@Test
 	public void test_my_page() {
